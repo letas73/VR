@@ -1,0 +1,32 @@
+.nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 30px;
+    color: var(--color-white);
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      transition: color .2s ease-in-out;
+      color: var(--color-bright);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}

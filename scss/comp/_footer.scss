@@ -1,0 +1,163 @@
+.footer {
+  padding-top: 150px; 
+  padding-bottom: 77px;
+
+  background-color: #292929;
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__contacts {
+    display: flex;
+    margin-right: 40px;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      margin-right: 28px;
+
+      background-color: var(--color-white);
+      border-radius: 100%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__politics {
+
+    &-text {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      color: #00FFD1;
+
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #0085FF;
+      }
+    }
+  }
+}
+
+.footer-nav {
+  margin-right: 276px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+
+    &:first-child  {
+      font-weight: 500;
+      font-size: 30px;
+      color: var(--color-white);
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--color-white);
+
+    &:hover {
+      color: var(--color-bright);
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer-nav {
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 998px) {
+  .footer {
+    padding: 70px 0;
+
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__left {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+
+    &__item {
+      
+      &:first-child {
+        font-size: 20px;
+      }
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    &__left {
+      flex-direction: column;
+    }
+
+    &__info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__contacts {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer-nav {
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
